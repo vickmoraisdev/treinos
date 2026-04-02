@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/faviicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="ola" id="sessaola">Olá, Mundo! &#x2B50;👩🏽‍💻 </h1> <!--código do emoji estrela-->
+        <hr>
+        <!--Introdução-->
+        <section>
+            <p class="documento-estudos">Esse é o meu documento de estudos
+                HTML.
+            </p>
+            <p class="criando">Usarei aqui só para treinar meus conhecimentos. <br>
+                Não vou colocar nada de importante, esse é um site
+                voltado para treinos! <br>
+                Nesse momento, estou aprendendo <em><abbr title="HyperText Markup Language">HTML</abbr></em>
+                e <em><abbr title="Cascading Style Sheets">CSS</abbr></em>.
+            </p>
+        </section>
+    </header>
+    <main>
+        <!--Simbolos-->
+        <section>
+            <h2 id="sessaosimbolos">Praticando símbolos:</h2>
+                <p>Vamos adicionar alguns símbolos especiais:<strong class="simbolos">
+                    &reg; ;
+                    &copy; ;
+                    &trade; ;
+                    &euro; ;
+                    &pound; ;
+                    &yen; ;
+                    &Delta;.
+                    </strong>
+                </p>
+        </section>
+        <!--imagem-->
+        <section>
+            <h2 id="sessaoimagem">Imagem</h2>
+            <p>
+                SEMPRE olhe o tamanho da imagem, não coloque imagens pesadas no site!
+                Deixe as imagens de um tamanho = ou &lt; que 1500<br>
+                Ou então, de resolução menor que 80 <br> <br>
+                Exemplo de imagens: <br>
+                <img src="imagens/css.jpg" alt="CSS logo tipo" width="210" height="200">
+                <img src="imagens/html.png" alt="HTML logo tipo" width="200" height="200"> <br> <br>
+                Essas imagens eu adicionei escrevendo <strong class="img">img</strong> e
+                no meio de src. Para colocar a imagem de um jeito fácil demais, aperte Crtl + barra de espaço do teclado
+                E PRONTO! O caminho da imagem estará lá. <br>
+                Não esqueça de ajustar a height-altura e width-largura <br>
+                <br>
+                Também podemos pegar imagens da internet, por link, exemplo essa: <br> <br>
+                <img src="https://cdn.prod.website-files.com/6668e93c192947ca9f58deba/66a025aa41263bb29f86a995_481ddfbb55fe64d824c1ee706c2afd3f.png"
+                alt="JavaScript logo tipo" width="200" height="200"> <!--URL da imagem-->
+                <br> <br>
+                Coloquei um favicon(bem feinho) pra esse site. Ele fica no &lt;head&gt; do HTML.
+            </p>
+        </section>
+        <!--Hierarquia de Títulos-->
+        <section>
+            <h1 id="sessaohierarquia">Aqui, vou mostrar a hierarquia dos títulos <mark>[h1]</mark></h1>
+            <h2>Logo abaixo de H1, coloco um H2 se for preciso.<mark>[h2]</mark></h2>
+            <h3>Aqui é o sub do sub título<mark>[h3]</mark></h3>
+            <p> E esse, o parágrafo do H3: Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Iste cupiditate fugit minima libero asperiores, laboriosam vero,
+                dolorum sit incidunt quo consequatur in minus repellat. <br>
+                Quos sapiente deleniti mollitia dolore deserunt!</p>
+            <h3>Mais um sub do sub<mark>[h3]</mark></h3>
+            <p> E o parágrafo: Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                Adipisci, omnis! Explicabo voluptatibus quos excepturi animi et ducimus voluptates, debitis magnam. <br>
+                Impedit ducimus ipsum aliquid odit officia modi quas, repellendus ut!</p>
+            <h2>Tem como um título ainda maior que h1?</h2>
+            <h3>Sim! Tem como.</h3>
+            <p>Tem como deixar ainda maior, mas isso é em CSS, lá que mexemos no tamanho.</p>
+        </section>
+        <!--Semântica-->
+        <section>
+            <h1 id="sessaosemantica">Vamos falar da semântica</h1>
+            <p>É muito importante entender a semântica do HTML. Ele que faz as coisas
+                terem um sentido, por exemplo: <br>
+                Se eu colocar um &lt;address&gt; num nome de uma rua, um endereço, o usuário que clicar
+                ali vai ser rendimencionado pro google maps nesse endereço, é muito bom isso! <br>
+                <address class="rua">R. Amazonas - Morada do Contorno Resende - RJ</address>
+                pronto! Irei para esse endereço.
+            </p>
+            <p>É importante saber o que usar no HTML e o que usar no CSS. <br>
+                Html para semântica, dar significado as partes do site <br>
+                Css para dar visual
+            </p>
+        </section>
+        <!--Códigos-->
+        <section>
+            <h1 id="sessaocodigo">Para código fonte - pré formatação</h1>
+            <p>Quando você for demonstrar um código/documento, use o &lt;code&gt; para deixar melhor a fonte do texto. <br>
+                Não se esqueça do &lt;pre&gt; também. Exemplo:
+            </p>
+            <pre>
+                <code class="code">
+                    num = int(input('Digite um número: '))
+                    if num % 2 == 0:
+                        print(f'O número {num} é PAR!')
+                    else:
+                        print(f'O número {num} é ÍMPAR!')
+                    print('Fim do programa.')
+                </code>
+            </pre>
+        </section>
+        <!--Listas ordenadas/não ordenadas-->
+        <section>
+            <h1 id="sessaolistas">Trabalhando com listas</h1>
+            <h2>Listas ordenadas</h2>
+            <p>Desse jeito, você criará listas numeradas, exemplo:</p>
+            <ol>
+                <li>Acordar</li>
+                <li>Ligar pro João</li>
+                <li>Tomar café</li>
+            </ol>
+            <p>Tem como criar listas por letras também, colocando um type no &lt;ol&gt;:</p>
+            <ol type="A">
+                <li>Acordar</li>
+                <li>Ligar pro João</li>
+                <li>Tomar café</li>
+            </ol>
+            <p>Esse type tem umas 5 opções, só escolher uma.</p>
+            <h2>Listas não ordenadas</h2>
+            <p>São listas sem sequência, usando &lt;ul&gt;, exemplo:</p>
+            <ul>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Biscoito</li>
+            </ul>
+            <p>E da pra mudar o tipo também se não quiser uma bolinha ali. <br>
+            E claro, da pra por uma lista dentro da outra. </p>
+            <h2>Lista de definição</h2>
+            <p>Serve para estruturar pares de termos e suas respectivas descrições, como glossários,
+                catálogos de produtos, glossários, Perguntas Frequentes (FAQ) ou
+                metadados de chave-valor. <br>
+                Ela utiliza as tags &lt;dl&gt; (lista), &lt;dt&gt; (termo) e &lt;dd&gt; (descrição).</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação de hipertexto.</dd>
+        
+                <dt>CSS</dt>
+                <dd>Folhas de estilo em cascata.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para interatividade com o site.</dd>
+            </dl>
+        </section>
+        <!--Links-->
+        <section>
+            <h1 id="sessaolinks">Como funcionam os links - externos</h1>
+            <h2>Link que não abre em outra aba</h2>
+            <p>É recomendado que você crie links que abram na sua mesma aba
+                apenas quando é a continuação de sua site seu, ou algo seu. <br>
+            Se não for, crie links com &lt;a target="_black"&gt; para o usuário ser
+            redimencionado para outra aba. </p>
+            <h1>Link internos</h1>
+            <h2>Um link interno te redireciona para lugares dentro do seu próprio site.</h2>
+            <p>Exemplos: <br> <br>
+                <a href="#sessaola">Introdução</a> &nbsp;
+                <a href="#sessaosimbolos">Simbolos</a> &nbsp;
+                <a href="#sessaoimagem">Imagem</a> &nbsp;
+                <a href="#sessaohierarquia">Hierarquia de Títulos</a> &nbsp;
+                <a href="#sessaosemantica">Semântica</a> &nbsp;
+                <a href="#sessaolistas">Listas</a> &nbsp;
+                <a href="#sessaolinks">Links</a>
+            </p>
+        </section>
+        <!--Cores em degradê-->
+        <section>
+            <hr>
+            <h1>Tipos de <span class="degrade">degradê</span> em CSS</h1>
+            <h2>Existem vários tipos, por exemplo:</h2>
+                <h3>TO BOTTOM</h3>
+                <p>
+                    background-image: linear-gradient(to <strong>bottom</strong>, white, rgb(227, 178, 246)); <br>
+                    Ele vai fazer o degradê de cima pra baixo.
+                </p>
+                <h3>TO TOP</h3>
+                <p>
+                    background-image: linear-gradient(to <strong>top</strong>, white, rgb(227, 178, 246)); <br>
+                    Ele vai fazer o degradê de baixo pra cima.
+                </p>
+                <h3>TO LEFT</h3>
+                <p>
+                    background-image: linear-gradient(to <strong>left</strong>, white, rgb(227, 178, 246)); <br>
+                    Ele vai fazer o degradê da esquerda pra direita.
+                </p>
+                <h3>TO RIGHT</h3>
+                <p>
+                    background-image: linear-gradient(to <strong>right</strong>, white, rgb(227, 178, 246)); <br>
+                    Ele vai fazer o degradê da direita pra esquerda.
+                </p>
+                <p>
+                    É possível colocar quantas cores quiser, não apenas 2.
+                </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; Todos os direitos reservados. <br>
+            Feito por: Vitória de Morais. <br>
+            Entre em contato comigo pelo
+            <a href="https://www.instagram.com/vi1vi5/" target="_blank">Instagram</a> &nbsp;
+            <a href="https://github.com/vickmoraisdev" target="_blank">GitHub</a> &nbsp;
+            <a href="https://www.linkedin.com/in/vit%C3%B3ria-morais-394780347" target="_blank">LinkedIn</a> &nbsp; <br>
+            E-mail: vitoriamoraisfaria@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
