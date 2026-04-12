@@ -6,19 +6,23 @@
     <title>Treinamento</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/faviicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+    </style>
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="#sessaola">Introdução</a> &nbsp;
-                <a href="#sessaosimbolos">Simbolos</a> &nbsp;
-                <a href="#sessaoimagem">Imagem</a> &nbsp;
-                <a href="#sessaohierarquia">Hierarquia de Títulos</a> &nbsp;
-                <a href="#sessaosemantica">Semântica</a> &nbsp;
-                <a href="#sessaolistas">Listas</a> &nbsp;
-                <a href="#sessaolinks">Links</a> &nbsp;
-                <a href="#sessaocss">Css</a>
+                <li><a href="#sessaola" class="navegacao">Introdução</a></li> &nbsp;
+                <li><a href="#sessaosimbolos" class="navegacao">Simbolos</a></li> &nbsp;
+                <li><a href="#sessaoimagem" class="navegacao">Imagem</a></li> &nbsp;
+                <li><a href="#sessaohierarquia" class="navegacao">Hierarquia de Títulos</a></li> &nbsp;
+                <li><a href="#sessaosemantica" class="navegacao">Semântica</a></li> &nbsp;
+                <li><a href="#sessaolistas" class="navegacao">Listas</a></li> &nbsp;
+                <li><a href="#sessaolinks" class="navegacao">Links</a></li> &nbsp;
+                <li><a href="#sessaocss" class="navegacao">Css</a></li>
             </ul>
         </nav>
         <div class="part-header">
@@ -29,7 +33,7 @@
                 <p class="documento-estudos">Esse é o meu documento de estudos
                     HTML.
                 </p>
-                <p class="criando">Usarei aqui só para treinar meus conhecimentos. <br>
+                <p class="treinar">Usarei aqui só para treinar meus conhecimentos. <br>
                     Não vou colocar nada de importante, esse é um site
                     voltado para treinos! <br>
                     Nesse momento, estou aprendendo <em><abbr title="HyperText Markup Language">HTML</abbr></em>
@@ -39,10 +43,10 @@
         </div>
     </header>
     <main>
-        <div class="part-html">
+        <article class="part-html">
             <!--Simbolos-->
             <section>
-                <h2 id="sessaosimbolos">Praticando símbolos:</h2>
+                <h2 id="sessaosimbolos">Praticando símbolos</h2>
                     <p>Vamos adicionar alguns símbolos especiais:<strong class="simbolos">
                         &reg; ;
                         &copy; ;
@@ -115,7 +119,7 @@
                     Não se esqueça do &lt;pre&gt; também. Exemplo:
                 </p>
                 <pre>
-                    <code class="code">
+                    <code>
                         num = int(input('Digite um número: '))
                         if num % 2 == 0:
                             print(f'O número {num} é PAR!')
@@ -172,22 +176,23 @@
                 <h2>Link que não abre em outra aba</h2>
                 <p>É recomendado que você crie links que abram na sua mesma aba
                     apenas quando é a continuação de sua site seu, ou algo seu. <br>
-                Se não for, crie links com &lt;a target="_black"&gt; para o usuário ser
+                Se não for, crie links com &lt;a target="_blank"&gt; para o usuário ser
                 redimencionado para outra aba. </p>
                 <h1>Link internos</h1>
                 <h2>Um link interno te redireciona para lugares dentro do seu próprio site.</h2>
                 <p>Exemplos: <br> <br>
-                    <a href="#sessaola">Introdução</a> &nbsp;
-                    <a href="#sessaosimbolos">Simbolos</a> &nbsp;
-                    <a href="#sessaoimagem">Imagem</a> &nbsp;
-                    <a href="#sessaohierarquia">Hierarquia de Títulos</a> &nbsp;
-                    <a href="#sessaosemantica">Semântica</a> &nbsp;
-                    <a href="#sessaolistas">Listas</a> &nbsp;
-                    <a href="#sessaolinks">Links</a>
+                    <a href="#sessaola" class="sessoesdelinks">Introdução</a> &nbsp;
+                    <a href="#sessaosimbolos" class="sessoesdelinks">Símbolos</a> &nbsp;
+                    <a href="#sessaoimagem" class="sessoesdelinks">Imagem</a> &nbsp;
+                    <a href="#sessaohierarquia" class="sessoesdelinks">Hierarquia de Títulos</a> &nbsp;
+                    <a href="#sessaosemantica" class="sessoesdelinks">Semântica</a> &nbsp;
+                    <a href="#sessaolistas" class="sessoesdelinks">Listas</a> &nbsp;
+                    <a href="#sessaolinks" class="sessoesdelinks">Links</a>
                 </p>
             </section>
-        </div>
-        <div class="part-css">
+        </article>
+        
+        <article class="part-css">
             <!--Cores em degradê-->
             <section id="sessaocss">
                 <h1>Tipos de <span class="degrade">degradê</span> em CSS</h1>
@@ -216,16 +221,56 @@
                         É possível colocar quantas cores quiser, não apenas 2.
                     </p>
             </section>
-        </div>
+            <!--pseudo-classes-->
+            <section>
+                <h1>Pseudo-classes</h1>
+                <h2>O que é pseudo-classes?</h2>
+                <p>
+                    Em CSS, pseudo-classes são palavras-chave adicionadas a um seletor 
+                    que especificam um estado especial do(s) elemento(s) 
+                    selecionado(s). <br> Elas permitem estilizar elementos 
+                    com base na interação do usuário.
+                </p>
+                <p>
+                    Um exemplo usando o :hover <br>
+                    No hover, quando você passa o mouse por cima do elemento, algo acontece, exemplo:
+                </p>
+                <div class="mouse">
+                    Passe o mouse aqui
+                    <p>
+                        Oii, tudo bem?
+                    </p>
+                </div>
+                <p>
+                    Viu? Existe um texto escondido, e dá pra fazer várias coisas com isso! <br>
+                    Eu usei um código que chamamos de filho, o class mouse recebe o filho p (parágrafo) <br>
+                    <pre>
+                        <code>
+                            .mouse:hover > p{
+                                display: block;
+                            }
+                        </code>
+                    </pre>
+                </p>
+                <p>Símbolos da CSS existentes:</p>
+                <ul>
+                    <li># = id</li>
+                    <li>. = class</li>
+                    <li>: = pseudo-class</li>
+                    <li>:: = pseudo-element</li>
+                    <li>> = children</li>
+                </ul>
+            </section>
+        </article>
     </main>
     <footer>
         <p>
             &copy; Todos os direitos reservados. <br>
             Feito por: Vitória de Morais. <br>
             Entre em contato comigo pelo
-            <a href="https://www.instagram.com/vi1vi5/" target="_blank">Instagram</a> &nbsp;
-            <a href="https://github.com/vickmoraisdev" target="_blank">GitHub</a> &nbsp;
-            <a href="https://www.linkedin.com/in/vit%C3%B3ria-morais-394780347" target="_blank">LinkedIn</a> &nbsp; <br>
+            <a href="https://www.instagram.com/vi1vi5/" target="_blank" class="link">Instagram</a> &nbsp;
+            <a href="https://github.com/vickmoraisdev" target="_blank" class="link">GitHub</a> &nbsp;
+            <a href="https://www.linkedin.com/in/vit%C3%B3ria-morais-394780347" target="_blank" class="link">LinkedIn</a> &nbsp; <br>
             E-mail: vitoriamoraisfaria@gmail.com
         </p>
     </footer>

@@ -1,10 +1,31 @@
 @charset "UTF-8";
 
-.ola{
-    text-align: center;
-    color: rgb(171, 140, 199);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Isso faz o padding ser calculado DENTRO da largura */
 }
 
+/*Parte do body*/
+body{
+    background-image: linear-gradient(to bottom, rgb(216, 199, 255), rgb(227, 178, 246));
+    color: rgb(85, 42, 126);
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+/*Espaçamento entre todas as linhas*/
+p, h1, h2, h3 {
+    margin-bottom: 15px; /* Cria um espaço entre uma linha e outra */
+}
+
+/*Centralizando todas as h1 e h2*/
+h1, h2{
+    text-align: center;
+}
+
+/*Estilizando a parte de navegação*/
 nav {
     width: 100%;
     text-align: center;
@@ -15,43 +36,57 @@ nav ul {
     list-style: none;       /* Remove as bolinhas da lista */
     gap: 50px;              /* Espaço entre as palavras */
     justify-content: center; /* Centraliza no topo */
-    padding: 0;              /* Remove o espaço vazio da esquerda */
+    flex-wrap: wrap;
+    padding: 0; 
     margin: 0;
+    padding: 20px;
 }
 
 nav a {
     text-decoration: none;  /* Remove o sublinhado dos links */
     font-size: 0.8rem;      /* Deixa a letra pequena */
     color: #000;            /* Cor da letra */
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.navegacao:hover{
+    color: rgb(85, 42, 126);
+}
+
+/*Parte do cabeçario/header*/
+.part-header{
+    background-color: rgb(233, 228, 248);
+    max-width: 800px;
+    width: 90vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/*Estilizando a palavra 'Olá, Mundo!*/
+.ola{
+    text-align: center;
+    color: rgb(171, 140, 199);
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Mudei a fonte do site pra Arial*/
 section{
     font-family: Arial, Helvetica, sans-serif
 }
 
+/*Ajustei o texto do header*/
 .documento-estudos{
     text-align: center;
+    padding: 5px;
+    height: 10px;
 }
 
-.criando{
+.treinar{
     color: rgb(95, 55, 133);
     text-align: center;
-}
-
-.simbolos,
-em,
-.img,
-.rua,
-.code {
-    color: rgb(136, 83, 186);
-}
-
-mark{
-    background-color: rgb(222, 201, 243);
-}
-img{
-    border: 3px solid;
 }
 
 abbr {
@@ -60,16 +95,63 @@ abbr {
 
 }
 
-
-body{
-    background-image: linear-gradient(to bottom, rgb(216, 199, 255), rgb(227, 178, 246));
-    color: rgb(85, 42, 126)
+/*Estilização do bloco que falo sobre HTML*/
+.part-html{
+    background-color: rgb(233, 228, 248);
+    border-radius: 20px;
+    box-shadow: -10px 10px;
+    width: 95vw;
+    max-width: 1320px;
+    padding: 20px;
+    margin: 30px auto;
 }
 
-footer{
-    text-align: center;
+.simbolos,
+em,
+.img,
+.rua,
+code {
+    color: rgb(136, 83, 186);
 }
 
+/*Estilização das imagens*/
+img{
+    margin: 7px;
+    border: 3px solid;
+    border-radius: 3px;
+}
+
+mark{
+    background-color: rgb(222, 201, 243); 
+}
+
+/*Endireitei a lista pq não tava alinhada com a de baixo*/
+ol{
+    margin: 6px;
+}
+
+/*Estilizei os links da parte que fala sobre links, aparecendo uma linha quando passa o mouse neles*/
+.sessoesdelinks{
+    text-decoration: none;
+}
+
+.sessoesdelinks:hover{
+    text-decoration: underline;
+}
+
+
+/*Parte do bloco que fala sobre CSS*/
+.part-css{
+    background-color: rgb(233, 228, 248);
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+    width: 95vw;
+    max-width: 1320px;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+/*Degradê da palavra*/
 .degrade{
     background-image: linear-gradient(to left, rgb(81, 0, 128), rgb(185, 138, 208));
     -webkit-background-clip: text;
@@ -77,28 +159,27 @@ footer{
     -webkit-text-fill-color: transparent;
 }
 
-.part-header{
-    background-color: rgb(233, 228, 248);
-    width: 800px;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 20px auto;
+/*Mostra o texto escondido quando passa o mouse*/
+.mouse:hover{
+    color: rgb(255, 0, 0);
 }
 
-.part-html{
-    background-color: rgb(233, 228, 248);
-    border-radius: 20px;
-    box-shadow: -10px 10px;
-    width: 1350px;
-    padding: 20px;
-    margin: 30px auto;
+.mouse > p{
+    display: none;
+    color: rgba(115, 41, 41, 0.466);
+    margin-left: 15px;
 }
 
-.part-css{
-    background-color: rgb(233, 228, 248);
-    border-radius: 20px;
-    box-shadow: 10px 10px;
-    width: 1350px;
-    padding: 20px;
-    margin: 30px auto;
+.mouse:hover > p{
+    display: block;
+}
+
+
+/*Estilização dos links de rede social*/
+footer{
+    text-align: center
+}
+
+.link:hover{
+    color: rgb(139, 0, 219);
 }
