@@ -8,21 +8,49 @@
 
 /*Parte do body*/
 body{
-    background-image: linear-gradient(to bottom, rgb(216, 199, 255), rgb(227, 178, 246));
+    background-image: linear-gradient(to bottom, rgb(216, 199, 255), rgb(190, 163, 252));
     color: rgb(85, 42, 126);
     overflow-x: hidden;
     width: 100vw;
 }
 
 
-/*Espaçamento entre todas as linhas*/
-p, h1, h2, h3 {
+/*Espaçamento título header*/
+h1 {
     margin-bottom: 15px; /* Cria um espaço entre uma linha e outra */
 }
 
-/*Centralizando todas as h1 e h2*/
-h1, h2{
+.part-html h1{
+    padding: 20px;
     text-align: center;
+    background-color: rgb(228, 217, 254);
+    border-radius: 100px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.035);
+    margin-top: 70px;
+}
+
+.part-css h1{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(230, 219, 255);
+    border-radius: 100px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.035);
+    margin-top: 70px;
+}
+
+.part-css h1, h2{
+    padding: 20px;
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+    max-width: 950px;
+    line-height: 20px;
+}
+
+h3{
+    margin-left: 10px;
 }
 
 /*Estilizando a parte de navegação*/
@@ -60,7 +88,9 @@ nav a {
     width: 90vw;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 40px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.143);
+    margin-bottom: 60px;
 }
 
 /*Estilizando a palavra 'Olá, Mundo!*/
@@ -72,9 +102,21 @@ nav a {
     font-style: normal;
 }
 
+.section-header{
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
 /*Mudei a fonte do site pra Arial*/
 section{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgb(200, 176, 255), rgb(224, 212, 251)); 
 }
 
 /*Ajustei o texto do header*/
@@ -106,6 +148,10 @@ abbr {
     margin: 30px auto;
 }
 
+.topo{
+    margin-top: 0px;
+}
+
 .simbolos,
 em,
 .img,
@@ -119,15 +165,23 @@ img{
     margin: 7px;
     border: 3px solid;
     border-radius: 3px;
+    margin-top: 25px;
+    outline-style:double;
+    outline-color: blueviolet;
 }
 
-mark{
-    background-color: rgb(222, 201, 243); 
+.imgjavascript{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*Endireitei a lista pq não tava alinhada com a de baixo*/
 ol{
-    margin: 6px;
+    margin-left: 25px;
+}
+
+ul{
+    margin-left: 25px;
 }
 
 /*Estilizei os links da parte que fala sobre links, aparecendo uma linha quando passa o mouse neles*/
@@ -139,6 +193,33 @@ ol{
     text-decoration: underline;
 }
 
+.texto-sozinho {
+    margin-top: 600px;
+    margin-bottom: 500px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+/*Essa parte peguei da IA pq ainda não sei fazer sozinha*/
+    /* 1. Chamamos a sua animação (sem tempo fixo, o scroll que manda) */
+    animation: texto-sozinho linear;
+
+    /* 2. Dizemos que a animação deve acontecer enquanto o elemento entra na tela */
+    animation-timeline: view();
+
+    /* 3. Definimos que ela começa quando o topo do elemento surge e termina quando ele está no meio */
+    animation-range: entry 10% cover 60%;
+}
+
+@keyframes texto-sozinho {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /*Parte do bloco que fala sobre CSS*/
 .part-css{
@@ -167,17 +248,21 @@ ol{
 .mouse > p{
     display: none;
     color: rgba(115, 41, 41, 0.466);
-    margin-left: 15px;
+    margin-left: 6px;
 }
 
 .mouse:hover > p{
     display: block;
 }
 
+.mouse{
+    margin-left: 10px;
+}
 
 /*Estilização dos links de rede social*/
-footer{
-    text-align: center
+.paragrafo-footer{
+    text-align: center;
+    max-width: none;
 }
 
 .link:hover{
