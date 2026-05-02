@@ -259,6 +259,11 @@ ul{
     margin-left: 10px;
 }
 
+.exemplo-img{
+    background-image: url(imagens/exemplo.png);
+    height: 100px;
+}
+
 /*Estilização dos links de rede social*/
 .paragrafo-footer{
     text-align: center;
