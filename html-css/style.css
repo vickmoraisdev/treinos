@@ -251,6 +251,21 @@ tfoot td{
     text-align: center;
 }
 
+.desafio1 td, .desafio2 td{
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(198, 177, 247);
+}
+
+.desafio1 table, .desafio2 table{
+    border-collapse: collapse;
+}
+
+div.desafio1, div.desafio2{
+    margin: 35px;
+}
+
 .texto-sozinho {
     margin-top: 600px;
     margin-bottom: 500px;
