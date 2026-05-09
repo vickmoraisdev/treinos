@@ -193,6 +193,64 @@ ul{
     text-decoration: underline;
 }
 
+table{
+    margin: auto;
+    position: relative;
+}
+
+.tabela1 table{
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+.tabela1 td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+caption{
+    padding: 15px;
+    background-color: rgb(198, 177, 247);
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+.tabela2 table{
+    max-width: 500px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.tabela2 tbody > tr:nth-child(odd){ /*faz o efeito zebrado. Odd é ímpar e Even é par*/
+    background-color: rgb(238, 232, 255);
+}
+
+.tabela2 thead > tr > th{ /*faz o título ir descendo junto*/
+    position: sticky;
+    top: -1px;
+}
+
+.tabela2 td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabela2 th, tfoot{
+    padding: 5px;
+    background-color: rgb(198, 177, 247);
+}
+
+.numero{
+    text-align: right;
+}
+
+tfoot td{
+    text-align: center;
+}
+
 .texto-sozinho {
     margin-top: 600px;
     margin-bottom: 500px;
