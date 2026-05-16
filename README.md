@@ -27,10 +27,10 @@ Consolidar minha base em desenvolvimento web para futuramente trabalhar como des
 
 ## 🚀 Próximos passos
 
-- Aprender JavaScript
-- Melhorar no banco de dados (MySQL)
+- Aprender JavaScript (aprendendo...)
+- Aprofundar estudos sobre banco de dados (MySQL)
 - Juntar o HTML/CSS no JavaScript
-- Começar projetos práticos
+- Começar projetos práticos, juntando front-end e back-end
 
 ---
 
